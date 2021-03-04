@@ -1,0 +1,2 @@
+# hut
+Django website
