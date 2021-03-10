@@ -100,6 +100,7 @@ WSGI_APPLICATION = 'interiorshop.wsgi.application'
 
 DATABASES = {
     'default': {
+        '''
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'hut',
         'USER': 'postgres',
@@ -107,6 +108,17 @@ DATABASES = {
         'PASSWORD': 'root',
 
         'HOST': 'localhost',
+
+        'PORT': '5432',
+        '''
+
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'dfo7sg3q3ogc5f',
+        'USER': 'hxhrucxqfzindp',
+
+        'PASSWORD': '722a61c72bea2f57d3efb01522c486d03c2d3d5ba8175e35918adef249769e5d',
+
+        'HOST': 'ec2-50-16-108-41.compute-1.amazonaws.com',
 
         'PORT': '5432',
     }
