@@ -84,6 +84,10 @@
             {% endif %}
 
             <a href="{% url 'vendors' %}"> Vendors |</a>
+
+            <div class="navbar-item">
+                <a href="{% url 'cart' %}" class="button is-dark">Cart{% if cart %} ({{ cart|length }}){% endif %}</a>
+            </div>
         </footer>
 
         {% block scripts %}
