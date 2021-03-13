@@ -58,7 +58,9 @@ INSTALLED_APPS = [
     'apps.core',
     'apps.order',
     'apps.product',
-    'apps.vendor'
+    'apps.vendor',
+    'cloudinary_storage',
+    'cloudinary',
 ]
 
 MIDDLEWARE = [
@@ -175,6 +177,15 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME' : 'dswkmxyve',
+    'API_KEY' : '376917376778286',
+    'API_SECRET' : 'Wt707Vvpy3U0jXdkT5GzKFF4XrM'
+}
+
+
 
 PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
@@ -184,7 +195,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
 
-MEDIA_ROOT  = os.path.join(BASE_DIR, 'media')
+#MEDIA_ROOT  = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
 # Activate Django-Heroku.
