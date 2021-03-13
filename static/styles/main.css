@@ -1,7 +1,10 @@
 /**
 * Nav
 */
-
+a {
+ text-decoration: none;
+ color: blanchedalmond;
+}
 .navbar {
     text-transform: uppercase;
 }
@@ -18,7 +21,7 @@
     font-size: large;
     display: inline-block;
     color: whitesmoke;
-    background: linear-gradient(#e66465, #9198e5);
+    background: rgb(153, 153, 153);
 
 }
 /**
