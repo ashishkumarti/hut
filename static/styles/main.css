@@ -1,10 +1,7 @@
 /**
 * Nav
 */
-a {
- text-decoration: none;
- color: blanchedalmond;
-}
+
 .navbar {
     text-transform: uppercase;
 }
