@@ -14,11 +14,11 @@
 /*login top*/
 .top{
     
-    border:5px solid black;
+    
     font-size: large;
     display: inline-block;
     color: whitesmoke;
-    background: #444;
+    background: linear-gradient(#e66465, #9198e5);
 
 }
 /**
