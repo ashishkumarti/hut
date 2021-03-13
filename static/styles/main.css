@@ -21,6 +21,10 @@
     background: #444;
 
 }
+.top a{
+text-decoration :none;
+color:white ;
+} 
 /**
 * Footer 
 */
